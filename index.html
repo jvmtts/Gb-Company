@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/f0be8f3580.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image" href="./src/assets/logo.png"/>
+    <title>GB Company</title>
+</head>
+
+<body class="bg-[#fbfbfd]">
+    
+    <header class="w-full bg-white/80 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+            <div class="flex items-center gap-5">
+                <img src="./src/assets/logo.png" 
+                     class="h-10 w-auto sm:h-12 object-contain" 
+                     alt="Logo da Empresa">
+                
+                <h1 class="text-2xl sm:text-3xl font-bold font-[Playfair] text-black">
+                    GB COMPANY
+                </h1>
+            </div>
+            <nav class="hidden md:flex gap-5">
+                <a href="#" class="px-4 py-2 text-sm text-gray-700 hover:text-black transition">Login</a>
+                <a href="#" class="px-4 py-2 bg-black text-sm text-white rounded-full hover:bg-gray-800 transition">Saiba Mais</a>
+            </nav>
+            <button id="menu-btn" class="md:hidden text-2xl text-black">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <div class="relative w-full h-16 sm:h-12 bg-transparent overflow-hidden pointer-events-none">
+        <div class="max-w-7xl mx-auto h-full relative">
+            <div class="absolute -left-[50%] -top-[120%] w-[100%] h-[250%] 
+                        bg-[#2ebffb] rounded-[100%] opacity-60 blur-[60px] sm:blur-[90px]">
+            </div>
+            <div class="absolute -right-[50%] -top-[120%] w-[100%] h-[250%] 
+                        bg-[#ffb37e] rounded-[100%] opacity-60 blur-[60px] sm:blur-[90px]">
+            </div>
+        </div>
+    </div>
+
+    <main class="relative w-full h-[812px] overflow-hidden">
+        
+        <div class="absolute inset-0 z-0">
+            <video 
+                src="./src/assets/car.mp4" 
+                autoplay 
+                loop 
+                muted 
+                playsinline 
+                class="w-full h-full object-cover">
+            </video>
+            <div class="absolute inset-0 bg-black/30"></div> 
+        </div>
+        
+        <div class="absolute inset-0 z-10 flex flex-col justify-center items-center max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-4xl md:text-7xl font-bold text-white tracking-tight">
+                O melhor dos dois mundos
+            </h2>
+            <p class="mt-4 text-xl md:text-2xl text-gray-200">Só aqui você encontra o carro dos sonhos</p>
+        </div>
+    </main>
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <h2 class="text-4xl md:text-5xl font-bold text-gray-900 text-center mb-12">
+                Conheça seu próximo sonho
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="bg-white rounded-xl shadow-xl overflow-hidden border border-gray-100 transition-shadow duration-300 hover:shadow-2xl">
+                    <div class="p-4 flex justify-center items-center h-56">
+                        <img src="./src/assets/assetsCar/Car1.png" 
+                             alt="Porsche 911 Targa" 
+                             class="max-h-full object-contain"
+                             style="max-width: 90%;"> 
+                    </div>
+
+                    <div class="px-6 pb-4 text-center">
+                        <h3 class="text-xl font-bold text-gray-900 mt-2 mb-1">Porsche 911 Targa</h3>
+                        <div class="flex justify-center items-center text-sm text-gray-600 mb-4">
+                            <span class="mr-3">
+                                <i class="fas fa-tachometer-alt text-gray-500 mr-1"></i> 450 cv
+                            </span>
+                            <span class="mr-3">
+                                <i class="fas fa-gas-pump text-gray-500 mr-1"></i> Gasolina
+                            </span>
+                            <span>
+                                <i class="fas fa-cogs text-gray-500 mr-1"></i> Automático
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-100 px-6 py-3 border-y border-gray-200">
+                        <p class="text-sm text-gray-500">Preço sugerido</p>
+                        <p class="text-2xl font-semibold text-gray-900">R$ 980.000</p>
+                    </div>
+
+                    <div class="p-6">
+                        <div class="grid grid-cols-2 gap-y-2 text-sm text-gray-700 mb-6">
+                            <span class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i> Teto Solar
+                            </span>
+                            <span class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i> Freio Cerâmico
+                            </span>
+                            <span class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i> Tração Integral
+                            </span>
+                            <span class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i> Apple CarPlay
+                            </span>
+                        </div>
+                        <div class="text-center">
+                             <a href="#" class="text-blue-600 font-semibold hover:text-blue-800 transition duration-150">
+                                Ir para o Showroom Online
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-xl overflow-hidden border border-gray-100 transition-shadow duration-300 hover:shadow-2xl">
+                    <div class="p-4 flex justify-center items-center h-56">
+                        <img src="./src/assets/assetsCar/Car2.png" 
+                             alt="Ferrari 296 GTB" 
+                             class="max-h-full object-contain"
+                             style="max-width: 90%;"> 
+                    </div>
+
+                    <div class="px-6 pb-4 text-center">
+                        <h3 class="text-xl font-bold text-gray-900 mt-2 mb-1">Ferrari 296 GTB</h3>
+                        <div class="flex justify-center items-center text-sm text-gray-600 mb-4">
+                            <span class="mr-3">
+                                <i class="fas fa-tachometer-alt text-gray-500 mr-1"></i> 640 cv
+                            </span>
+                            <span class="mr-3">
+                                <i class="fas fa-gas-pump text-gray-500 mr-1"></i> Gasolina
+                            </span>
+                            <span>
+                                <i class="fas fa-cogs text-gray-500 mr-1"></i> Automático
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-100 px-6 py-3 border-y border-gray-200">
+                        <p class="text-sm text-gray-500">Preço sugerido</p>
+                        <p class="text-2xl font-semibold text-gray-900">R$ 3.200.000</p>
+                    </div>
+
+                    <div class="p-6">
+                        <div class="grid grid-cols-2 gap-y-2 text-sm text-gray-700 mb-6">
+                            <span class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i> Aerodinâmica Ativa
+                            </span>
+                            <span class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i> Câmera Traseira
+                            </span>
+                            <span class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i> Som Premium
+                            </span>
+                            <span class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i> Controle de Tração
+                            </span>
+                        </div>
+                        <div class="text-center">
+                             <a href="#" class="text-blue-600 font-semibold hover:text-blue-800 transition duration-150">
+                                Ir para o Showroom Online
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-xl overflow-hidden border border-gray-100 transition-shadow duration-300 hover:shadow-2xl">
+                    <div class="p-4 flex justify-center items-center h-56">
+                        <img src="./src/assets/assetsCar/Car3.png" 
+                             alt="Lamborghini Huracán" 
+                             class="max-h-full object-contain"
+                             style="max-width: 90%;"> 
+                    </div>
+
+                    <div class="px-6 pb-4 text-center">
+                        <h3 class="text-xl font-bold text-gray-900 mt-2 mb-1">Lamborghini Huracán</h3>
+                        <div class="flex justify-center items-center text-sm text-gray-600 mb-4">
+                            <span class="mr-3">
+                                <i class="fas fa-tachometer-alt text-gray-500 mr-1"></i> 830 cv
+                            </span>
+                            <span class="mr-3">
+                                <i class="fas fa-bolt text-gray-500 mr-1"></i> Híbrido
+                            </span>
+                            <span>
+                                <i class="fas fa-cogs text-gray-500 mr-1"></i> Dupla Embreagem
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-100 px-6 py-3 border-y border-gray-200">
+                        <p class="text-sm text-gray-500">Preço sugerido</p>
+                        <p class="text-2xl font-semibold text-gray-900">R$ 4.500.000</p>
+                    </div>
+
+                    <div class="p-6">
+                        <div class="grid grid-cols-2 gap-y-2 text-sm text-gray-700 mb-6">
+                            <span class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i> Modo Elétrico
+                            </span>
+                            <span class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i> Launch Control
+                            </span>
+                            <span class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i> Câmbio Rápido
+                            </span>
+                            <span class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i> Freios de Competição
+                            </span>
+                        </div>
+                        <div class="text-center">
+                             <a href="#" class="text-blue-600 font-semibold hover:text-blue-800 transition duration-150">
+                                Ir para o Showroom Online
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-xl overflow-hidden border border-gray-100 transition-shadow duration-300 hover:shadow-2xl">
+                    <div class="p-4 flex justify-center items-center h-56">
+                        <img src="./src/assets/assetsCar/Car4.png" 
+                             alt="Lamborghini Temerario" 
+                             class="max-h-full object-contain"
+                             style="max-width: 90%;"> 
+                    </div>
+
+                    <div class="px-6 pb-4 text-center">
+                        <h3 class="text-xl font-bold text-gray-900 mt-2 mb-1">Lamborghini Temerario</h3>
+                        <div class="flex justify-center items-center text-sm text-gray-600 mb-4">
+                            <span class="mr-3">
+                                <i class="fas fa-tachometer-alt text-gray-500 mr-1"></i> 1500 cv
+                            </span>
+                            <span class="mr-3">
+                                <i class="fas fa-gas-pump text-gray-500 mr-1"></i> Gasolina
+                            </span>
+                            <span>
+                                <i class="fas fa-cogs text-gray-500 mr-1"></i> Automático
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-100 px-6 py-3 border-y border-gray-200">
+                        <p class="text-sm text-gray-500">Preço sugerido</p>
+                        <p class="text-2xl font-semibold text-gray-900">R$ 18.000.000</p>
+                    </div>
+
+                    <div class="p-6">
+                        <div class="grid grid-cols-2 gap-y-2 text-sm text-gray-700 mb-6">
+                            <span class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i> Velocidade Máxima
+                            </span>
+                            <span class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i> Couro Premium
+                            </span>
+                            <span class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i> Tração Integral
+                            </span>
+                            <span class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i> Aerodinâmica Rápida
+                            </span>
+                        </div>
+                        <div class="text-center">
+                             <a href="#" class="text-blue-600 font-semibold hover:text-blue-800 transition duration-150">
+                                Ir para o Showroom Online
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-xl overflow-hidden border border-gray-100 transition-shadow duration-300 hover:shadow-2xl">
+                    <div class="p-4 flex justify-center items-center h-56">
+                        <img src="./src/assets/assetsCar/Car5.png" 
+                             alt="Porshe Macan" 
+                             class="max-h-full object-contain"
+                             style="max-width: 90%;"> 
+                    </div>
+
+                    <div class="px-6 pb-4 text-center">
+                        <h3 class="text-xl font-bold text-gray-900 mt-2 mb-1">Porshe Macan</h3>
+                        <div class="flex justify-center items-center text-sm text-gray-600 mb-4">
+                            <span class="mr-3">
+                                <i class="fas fa-tachometer-alt text-gray-500 mr-1"></i> 720 cv
+                            </span>
+                            <span class="mr-3">
+                                <i class="fas fa-gas-pump text-gray-500 mr-1"></i> Gasolina
+                            </span>
+                            <span>
+                                <i class="fas fa-cogs text-gray-500 mr-1"></i> Automático
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-100 px-6 py-3 border-y border-gray-200">
+                        <p class="text-sm text-gray-500">Preço sugerido</p>
+                        <p class="text-2xl font-semibold text-gray-900">R$ 4.100.000</p>
+                    </div>
+
+                    <div class="p-6">
+                        <div class="grid grid-cols-2 gap-y-2 text-sm text-gray-700 mb-6">
+                            <span class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i> Chassis de Carbono
+                            </span>
+                            <span class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i> Aerofólio Ativo
+                            </span>
+                            <span class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i> Freios a Disco
+                            </span>
+                            <span class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i> Piloto Automático
+                            </span>
+                        </div>
+                        <div class="text-center">
+                             <a href="#" class="text-blue-600 font-semibold hover:text-blue-800 transition duration-150">
+                                Ir para o Showroom Online
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-xl overflow-hidden border border-gray-100 transition-shadow duration-300 hover:shadow-2xl">
+                    <div class="p-4 flex justify-center items-center h-56">
+                        <img src="./src/assets/assetsCar/Car6.png" 
+                             alt="Koenigsegg Jesko" 
+                             class="max-h-full object-contain"
+                             style="max-width: 90%;"> 
+                    </div>
+
+                    <div class="px-6 pb-4 text-center">
+                        <h3 class="text-xl font-bold text-gray-900 mt-2 mb-1">Koenigsegg Jesko</h3>
+                        <div class="flex justify-center items-center text-sm text-gray-600 mb-4">
+                            <span class="mr-3">
+                                <i class="fas fa-tachometer-alt text-gray-500 mr-1"></i> 630 cv
+                            </span>
+                            <span class="mr-3">
+                                <i class="fas fa-gas-pump text-gray-500 mr-1"></i> Gasolina
+                            </span>
+                            <span>
+                                <i class="fas fa-cogs text-gray-500 mr-1"></i> Automático
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-100 px-6 py-3 border-y border-gray-200">
+                        <p class="text-sm text-gray-500">Preço sugerido</p>
+                        <p class="text-2xl font-semibold text-gray-900">R$ 3.500.000</p>
+                    </div>
+
+                    <div class="p-6">
+                        <div class="grid grid-cols-2 gap-y-2 text-sm text-gray-700 mb-6">
+                            <span class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i> Design Clássico
+                            </span>
+                            <span class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i> Som Bang & Olufsen
+                            </span>
+                            <span class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i> Interior Personalizado
+                            </span>
+                            <span class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i> Câmera 360°
+                            </span>
+                        </div>
+                        <div class="text-center">
+                             <a href="#" class="text-blue-600 font-semibold hover:text-blue-800 transition duration-150">
+                                Ir para o Showroom Online
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    </body>
+</html>
