@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/f0be8f3580.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image" href="../src/assets/logo.png"/>
+    <title>GB Company | Sobre Nós</title>
+    <style>
+        .font-\[Playfair\] {
+            font-family: 'Playfair Display', serif;
+        }
+    </style>
+</head>
+
+<body class="bg-[#fbfbfd] min-h-screen flex flex-col">
+    
+    <header class="w-full bg-white/80 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+            <div class="flex items-center gap-5">
+                <a href="../index.html"> 
+                <img src="../src/assets/logo.png"
+                    class="h-10 w-auto sm:h-12 object-contain" 
+                    alt="Logo da Empresa">
+                </a>
+                <h1 class="text-2xl sm:text-3xl font-bold font-[Playfair] text-black">
+                    GB COMPANY
+                </h1>
+            </div>
+            <nav class="hidden md:flex gap-5">
+                <a href="login.html" class="px-4 py-2 text-sm text-gray-700 hover:text-black transition">Login</a>
+                <a href="#" class="px-4 py-2 bg-black text-sm text-white rounded-full hover:bg-gray-800 transition">Saiba Mais</a>
+            </nav>
+            <button id="menu-btn" class="md:hidden text-2xl text-black">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <div class="relative w-full h-16 sm:h-12 bg-transparent overflow-hidden pointer-events-none">
+        <div class="max-w-7xl mx-auto h-full relative">
+            <div class="absolute -left-[50%] -top-[120%] w-[100%] h-[250%] 
+                         bg-[#2ebffb] rounded-[100%] opacity-60 blur-[60px] sm:blur-[90px]">
+            </div>
+            <div class="absolute -right-[50%] -top-[120%] w-[100%] h-[250%] 
+                         bg-[#ffb37e] rounded-[100%] opacity-60 blur-[60px] sm:blur-[90px]">
+            </div>
+        </div>
+    </div>
+    
+    <main class="flex-grow">
+        
+        <section class="max-w-4xl mx-auto px-6 py-12 text-center">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4 font-[Playfair]">Nossa História</h2>
+            <p class="text-xl text-gray-600 mb-10">
+                Mais do que apenas vender carros, a GB Company oferece uma experiência de condução e exclusividade incomparáveis.
+            </p>
+
+            <div class="flex flex-col md:flex-row gap-8 text-left">
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-black md:w-1/2">
+                    <h3 class="text-2xl font-bold text-black mb-3">Missão</h3>
+                    <p class="text-gray-600">
+                        Proporcionar aos nossos clientes acesso exclusivo aos veículos de alta performance mais desejados do mundo, combinando tecnologia de ponta e serviço personalizado de excelência.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-black md:w-1/2">
+                    <h3 class="text-2xl font-bold text-black mb-3">Visão</h3>
+                    <p class="text-gray-600">
+                        Ser a principal referência global em mobilidade de luxo e performance, definindo o padrão de exclusividade e inovação no mercado automotivo.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white py-16">
+            <div class="max-w-7xl mx-auto px-6 text-center">
+                <h2 class="text-4xl font-bold text-gray-900 mb-12 font-[Playfair]">Conheça Nossos Colaboradores</h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <div class="flex flex-col items-center bg-gray-50 rounded-xl shadow-md transition hover:shadow-xl overflow-hidden">
+                        <div class="w-full h-72 bg-gray-300 overflow-hidden flex items-center justify-center"> 
+                            <img src="../src/assets/assetsRepresentantes/bielcosta.png" alt="Foto de Gabriel Costa" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mt-2">Gabriel Costa</h3>
+                            <p class="text-sm text-black font-semibold mb-3"> CEO Global & Sheik da GB company</p>
+                            <p class="text-gray-600 text-sm">
+                            "Comprometido com a inovação, Gabriel lidera a visão da empresa, garantindo que cada cliente viva uma experiência única e futurista."
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col items-center bg-gray-50 rounded-xl shadow-md transition hover:shadow-xl overflow-hidden">
+                         <div class="w-full h-72 bg-gray-300 overflow-hidden flex items-center justify-center">
+                             <img src="../src/assets/assetsRepresentantes/João.png" alt="Foto de João Victor" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mt-2">João Victor</h3>
+                            <p class="text-sm text-black font-semibold mb-3">CEO da Europa & CTO & Chefe de Tecnologia </p>
+                            <p class="text-gray-600 text-sm">
+                                "João é responsável pela integração de tecnologias futuristas nos nossos modelos e plataformas digitais para uma experiência conectada."
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col items-center bg-gray-50 rounded-xl shadow-md transition hover:shadow-xl overflow-hidden">
+                         <div class="w-full h-72 bg-gray-300 overflow-hidden flex items-center justify-center">
+                             <img src="../src/assets/assetsRepresentantes/vinilissi.png" alt="Foto de Vinicius Lissi" class="w-full h-full object-cover">
+                         </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mt-2">Vinicius Lissi</h3>
+                            <p class="text-sm text-black font-semibold mb-3">COO & Diretor de Operações</p>
+                            <p class="text-gray-600 text-sm">
+                                "Vinicius é a mente por trás da excelência operacional, garantindo que cada transação e entrega seja impecável e eficiente."
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col items-center bg-gray-50 rounded-xl shadow-md transition hover:shadow-xl overflow-hidden">
+                        <div class="w-full h-72 bg-gray-300 overflow-hidden flex items-center justify-center">
+                            <img src="../src/assets/assetsRepresentantes/bonello.png" alt="Foto Novo Sócio 1" class="w-full h-full object-cover bg-gray-200">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mt-2">Felipe Bonello</h3>
+                            <p class="text-sm text-black font-semibold mb-3">Limpador de chão</p>
+                            <p class="text-gray-600 text-sm">
+                                Limpa como nunca.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col items-center bg-gray-50 rounded-xl shadow-md transition hover:shadow-xl overflow-hidden">
+                        <div class="w-full h-72 bg-gray-300 overflow-hidden flex items-center justify-center">
+                            <img src="../src/assets/assetsRepresentantes/Vitor.png" alt="Foto Novo Sócio 2" class="w-full h-full object-cover bg-gray-200">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mt-2">Vitor Barbosa</h3>
+                            <p class="text-sm text-black font-semibold mb-3">Gerente do Tatuapé</p>
+                            <p class="text-gray-600 text-sm">
+                                Funcionário de ponta mas vive na sombra do irmão.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col items-center bg-gray-50 rounded-xl shadow-md transition hover:shadow-xl overflow-hidden">
+                        <div class="w-full h-72 bg-gray-300 overflow-hidden flex items-center justify-center">
+                            <img src="" alt="Foto Novo Sócio 3" class="w-full h-full object-cover bg-gray-200">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mt-2">Nome do Sócio 6</h3>
+                            <p class="text-sm text-black font-semibold mb-3">Cargo do Sócio</p>
+                            <p class="text-gray-600 text-sm">
+                                Aqui você coloca a descrição breve sobre este novo sócio e suas atribuições na empresa.
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-800 text-white py-6 mt-12">
+        <div class="max-w-7xl mx-auto px-6 text-center text-sm">
+            &copy; 2025 GB Company. Todos os direitos reservados.
+        </div>
+    </footer>
+
+</body>
+</html>
