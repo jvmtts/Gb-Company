@@ -11,6 +11,14 @@
         .font-\[Playfair\] {
             font-family: 'Playfair Display', serif;
         }
+        /* Adicionando classe de utilidade Tailwind para animação, se necessário */
+        .animate-fade-in-down {
+            animation: fadeInDown 0.3s ease-out;
+        }
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
     </style>
 </head>
 
@@ -32,11 +40,20 @@
                 <a href="login.html" class="px-4 py-2 text-sm text-gray-700 hover:text-black transition">Login</a>
                 <a href="./saibaMais.html" class="px-4 py-2 bg-black text-sm text-white rounded-full hover:bg-gray-800 transition">Saiba Mais</a>
             </nav>
-            <button id="menu-btn" class="md:hidden text-2xl text-black">
+            <button id="menu-btn" class="md:hidden text-2xl text-black cursor-pointer focus:outline-none">
                 <i class="fas fa-bars"></i>
             </button>
         </div>
-    </header>
+
+        <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-white border-t border-gray-100 shadow-lg flex flex-col p-4 space-y-3 animate-fade-in-down">
+            <a href="./login.html" class="block w-full text-center px-4 py-3 text-black hover:bg-gray-50 rounded-lg transition font-medium">
+                Login
+            </a>
+            <a href="./saibaMais.html" class="block w-full text-center px-4 py-3 bg-black text-white rounded-lg hover:bg-gray-800 transition font-medium">
+                Saiba Mais
+            </a>
+        </div>
+        </header>
 
     <div class="relative w-full h-16 sm:h-12 bg-transparent overflow-hidden pointer-events-none">
         <div class="max-w-7xl mx-auto h-full relative">
@@ -153,6 +170,7 @@
             </div>
         </div>
     </main>
-
+    
+    <script src="../js/script.js"></script> 
 </body>
 </html>

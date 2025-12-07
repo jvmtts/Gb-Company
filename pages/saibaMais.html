@@ -11,6 +11,14 @@
         .font-\[Playfair\] {
             font-family: 'Playfair Display', serif;
         }
+        /* Adicionando classe de utilidade Tailwind para animação, se necessário */
+        .animate-fade-in-down {
+            animation: fadeInDown 0.3s ease-out;
+        }
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
     </style>
 </head>
 
@@ -30,13 +38,22 @@
             </div>
             <nav class="hidden md:flex gap-5">
                 <a href="login.html" class="px-4 py-2 text-sm text-gray-700 hover:text-black transition">Login</a>
-                <a href="#" class="px-4 py-2 bg-black text-sm text-white rounded-full hover:bg-gray-800 transition">Saiba Mais</a>
+                <a href="#" class="px-4 py-2 bg-black text-sm text-white rounded-full hover:bg-gray-800 transition font-bold">Saiba Mais</a>
             </nav>
-            <button id="menu-btn" class="md:hidden text-2xl text-black">
+            <button id="menu-btn" class="md:hidden text-2xl text-black cursor-pointer focus:outline-none">
                 <i class="fas fa-bars"></i>
             </button>
         </div>
-    </header>
+
+        <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-white border-t border-gray-100 shadow-lg flex flex-col p-4 space-y-3 animate-fade-in-down">
+            <a href="./login.html" class="block w-full text-center px-4 py-3 text-black hover:bg-gray-50 rounded-lg transition font-medium">
+                Login
+            </a>
+            <a href="./saibaMais.html" class="block w-full text-center px-4 py-3 bg-black text-white rounded-lg hover:bg-gray-800 transition font-medium">
+                Saiba Mais
+            </a>
+        </div>
+        </header>
 
     <div class="relative w-full h-16 sm:h-12 bg-transparent overflow-hidden pointer-events-none">
         <div class="max-w-7xl mx-auto h-full relative">
@@ -94,27 +111,27 @@
                     </div>
 
                     <div class="flex flex-col items-center bg-gray-50 rounded-xl shadow-md transition hover:shadow-xl overflow-hidden">
-                         <div class="w-full h-72 bg-gray-300 overflow-hidden flex items-center justify-center">
-                             <img src="../src/assets/assetsRepresentantes/João.png" alt="Foto de João Victor" class="w-full h-full object-cover">
+                           <div class="w-full h-72 bg-gray-300 overflow-hidden flex items-center justify-center">
+                               <img src="../src/assets/assetsRepresentantes/João.png" alt="Foto de João Victor" class="w-full h-full object-cover">
                         </div>
                         <div class="p-6">
                             <h3 class="text-xl font-bold text-gray-900 mt-2">João Victor</h3>
                             <p class="text-sm text-black font-semibold mb-3">CEO da Europa & CTO & Chefe de Tecnologia </p>
                             <p class="text-gray-600 text-sm">
-                                "João é responsável pela integração de tecnologias futuristas nos nossos modelos e plataformas digitais para uma experiência conectada."
+                                 "João é responsável pela integração de tecnologias futuristas nos nossos modelos e plataformas digitais para uma experiência conectada."
                             </p>
                         </div>
                     </div>
 
                     <div class="flex flex-col items-center bg-gray-50 rounded-xl shadow-md transition hover:shadow-xl overflow-hidden">
-                         <div class="w-full h-72 bg-gray-300 overflow-hidden flex items-center justify-center">
-                             <img src="../src/assets/assetsRepresentantes/vinilissi.png" alt="Foto de Vinicius Lissi" class="w-full h-full object-cover">
-                         </div>
+                           <div class="w-full h-72 bg-gray-300 overflow-hidden flex items-center justify-center">
+                               <img src="../src/assets/assetsRepresentantes/vinilissi.png" alt="Foto de Vinicius Lissi" class="w-full h-full object-cover">
+                           </div>
                         <div class="p-6">
                             <h3 class="text-xl font-bold text-gray-900 mt-2">Vinicius Lissi</h3>
                             <p class="text-sm text-black font-semibold mb-3">COO & Diretor de Operações</p>
                             <p class="text-gray-600 text-sm">
-                                "Vinicius é a mente por trás da excelência operacional, garantindo que cada transação e entrega seja impecável e eficiente."
+                                 "Vinicius é a mente por trás da excelência operacional, garantindo que cada transação e entrega seja impecável e eficiente."
                             </p>
                         </div>
                     </div>
@@ -127,7 +144,7 @@
                             <h3 class="text-xl font-bold text-gray-900 mt-2">Felipe Bonello</h3>
                             <p class="text-sm text-black font-semibold mb-3">Limpador de chão</p>
                             <p class="text-gray-600 text-sm">
-                                Limpa como nunca.
+                                 Limpa como nunca.
                             </p>
                         </div>
                     </div>
@@ -140,7 +157,7 @@
                             <h3 class="text-xl font-bold text-gray-900 mt-2">Vitor Barbosa</h3>
                             <p class="text-sm text-black font-semibold mb-3">Gerente do Tatuapé</p>
                             <p class="text-gray-600 text-sm">
-                                Funcionário de ponta mas vive na sombra do irmão.
+                                 Funcionário de ponta mas vive na sombra do irmão.
                             </p>
                         </div>
                     </div>
@@ -153,7 +170,7 @@
                             <h3 class="text-xl font-bold text-gray-900 mt-2">Nome do Sócio 6</h3>
                             <p class="text-sm text-black font-semibold mb-3">Cargo do Sócio</p>
                             <p class="text-gray-600 text-sm">
-                                Aqui você coloca a descrição breve sobre este novo sócio e suas atribuições na empresa.
+                                 Aqui você coloca a descrição breve sobre este novo sócio e suas atribuições na empresa.
                             </p>
                         </div>
                     </div>
@@ -169,6 +186,8 @@
             &copy; 2025 GB Company. Todos os direitos reservados.
         </div>
     </footer>
+    
+    <script src="../js/script.js"></script>
 
 </body>
 </html>
